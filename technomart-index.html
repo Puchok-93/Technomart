@@ -31,7 +31,7 @@
                  и инструментов для ремонта
                 </p>
             <div class="contacts">
-                <p class="contact-number">+7(812) 555-05-55</p>
+                <a href="tel:+78125550555" class="contact-number">+7(812) 555-05-55</a>
                 <p class="contact-adres">г.Санкт-Петербург, Б-Конюшенная, д. 19/8</p>
             </div>
             <div class="user-button">
@@ -39,7 +39,7 @@
                 <a class="registration" href="#">Регистрация</a>
             </div>
             <ul class="user-menu">
-                <li class="user">Равшан Джамшутович</ul>
+                <li><a href="#" class="user">Равшан Джамшутович</li>
                 <li><a href="#" class="my-oreder">Мои заказаы</a></li>
                 <li><a href="#" class="personal-account">Личный кабинет</a></li>
             </ul>
@@ -64,35 +64,33 @@
     <h2 class="visually-hidden">Товары и услуги</h2>
     <ul class="banners" >
         <li class="item-banner">
-            <h3>Материалы</h3>
+            <p>Материалы</p>
             <a href="#" class="button-banner"> На любой вкус</a>
         </li>
         <li class="item-banner">
-            <h3>Инструменты</h3>
+            <p>Инструменты</p>
             <a href="#" class="button-banner">На все случаи</a>
         </li>
         <li class="item-banner">
-            <h3>Техника</h3>
+            <p>Техника</p>
         <a href="#" class="button-banner">Для стройки</a>
         </li>
         <li class="item-banner">
-            <h3>Скидки 50%</h3>
+            <p>Скидки 50%</p>
         <a href="#" class="button-banner">На 350 товаров</a>
         </li>
         <li class="item-banner">
-            <h3>Доставка</h3>
+            <p>Доставка</p>
         <a href="Бесплатно" class="button-banner">Бесплатно</a>
         </li>
     </ul>
     <ul class="sliders">
         <li class="item-slider">
-            <img src="" alt="Дрели">
             <p>Дрели</p>
             <p>Соседям на радость!</p>
             <a href="#" class="open-catalog">Открыть каталог</a>
         </li>
         <li class="item-slider">
-            <img src="" alt="Перфораторы">
             <p>Перфораторы</p>
             <p>Настоящие мужские игрушки</p>
             <a href="#" class="open-catalog">Открыть каталог</a>
@@ -279,31 +277,6 @@
         <img src="img/map-technomart.png" alt="г.Санкт-Петербург, Б-Конюшенная, д. 19/8">
         <button class="modal-close" type="button">Закрыть</button>
         <a href="#">Заблудились? Напишите нам!</a>
-        <form class="info-form" action="mail@htmlacademy.ru" method="POST">
-            <p>
-            <label for="username">Ваше имя:</label>
-            <input type="text" name="name" id="username" value="" placeholder="Имя Фамилия">
-            </p>
-            <p>
-            <label for="user-email">Ваш e-mail:</label>
-            <input type="text" name="email" id="user-email" value="" placeholder="email@example.com">
-            </p>
-            <p>
-            <label for="user-comment">Текст письма:</label>
-            <textarea type="text" name="comment" id="user-comment" value="" placeholder="В свободной форме"></textarea>
-            </p>
-            <button type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-</section>
-
-<section>
-    <p>Товар добавлен в корзину</p>
-        <div class="button-modal">
-            <a href="#">Оформить заказ</a>
-            <a href="#">Продолжить покупки</a>
-        </div>
-        <button class="modal-close" type="button">Закрыть</button>
 </section>
 
 </main>
@@ -354,5 +327,46 @@
         </p>
     </div>
 </footer>
+
+
+<!-- Попап товар в корзине -->
+
+<div class="popap-cart">
+    <p>Товар добавлен в корзину</p>
+    <div class="button-modal">
+        <a href="#">Оформить заказ</a>
+        <a href="#">Продолжить покупки</a>
+    </div>
+    <button class="modal-close" type="button">Закрыть</button>
+</div>
+
+
+<!-- Попап карта -->
+<div class="map">
+    <img src="img/map-big.png" width="940" height="446" alt="г.Санкт-Петербург, Б-Конюшенная, д. 19/8">
+    <button class="modal-close" type="button">Закрыть</button>
+</div>
+
+
+<!-- Попап форма обратной связи -->
+<div class="feedback">
+    <form class="info-form" action="mail@htmlacademy.ru" method="POST">
+        <p>
+            <label for="username">Ваше имя:</label>
+            <input type="text" name="name" id="username" value="" placeholder="Имя Фамилия">
+        </p>
+        <p>
+            <label for="user-email">Ваш e-mail:</label>
+            <input type="text" name="email" id="user-email" value="" placeholder="email@example.com">
+        </p>
+        <p>
+            <label for="user-comment">Текст письма:</label>
+            <textarea type="text" name="comment" id="user-comment" value="" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+</section>
+
 </body>
 </html>
