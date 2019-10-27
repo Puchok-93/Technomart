@@ -1,4 +1,19 @@
 
+/*Товар добавлен в корзину"*/
+var cartLink = document.querySelector(".buy"); 
+var cartPopup= document.querySelector(".cart-popup");
+var cartClose = cartPopup.querySelector(".modal-close");
+
+    cartLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.add("cart-popup-show");
+});
+
+    cartClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.remove("cart-popup-show");
+});
+
 /*Вызов кнопки "Написать нам"*/
 var link = document.querySelector(".write-us-button"); 
 var writeUsForm = document.querySelector(".write-us-form");
@@ -27,18 +42,3 @@ var mapClose = mapPopup.querySelector(".modal-close");
     evt.preventDefault();
     mapPopup.classList.remove("modal-map-show");
   });
-
-/*Товар добавлен в корзину"*/
-var cartLink = document.querySelector(".buy"); 
-var cartPopup= document.querySelector(".popup-cart");
-var cartClose = cartPopup.querySelector(".modal-close");
-
-    cartLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    cartPopup.classList.add("popup-cart-show");
-});
-
-    cartClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    cartPopup.classList.remove("popup-cart-show");
-});
