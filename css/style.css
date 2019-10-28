@@ -18,7 +18,7 @@
 
 .main-header {
     background-color: #f4f7f9;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
 }
 .top-header {
     display: flex;
@@ -222,11 +222,10 @@
 /*Второй блок header*/
 
 .bottom-header {
-    display: block;
-    margin-top: 45px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 45px;
 }
 .bottom-header .container {
     display: flex;
@@ -345,20 +344,20 @@
     color: rgba(0, 0, 0, 0.3);
 }
 .site-navigation {
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    background-color:#32425c;
-    border-bottom:5px solid #293449;
+    background-color: #32425c;
+    border-bottom: 5px solid #293449;
+    padding: 0px;
     margin: 0px;
     margin-top:39px;
-    padding: 0px;
-    padding-left:21px;
-    padding-right:25px;
     list-style: none;
-
+    padding-left: 21px;
+    padding-right: 25px;
 }
+
 .site-navigation a {
     display:block;
     font-family: "Cuprum", sans-serif;
@@ -367,7 +366,7 @@
     line-height: 17px;
     text-decoration: none;
     color: #ffffff;
-    padding:20px 25px 19px
+    padding: 20px 20px 19px;
 }
 .site-navigation a:hover {
     background-color:#293449
@@ -669,7 +668,7 @@ left: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    margin-top: 30px;
     background-color: #f9f5f0;
 }
 .popular-item h2 {
@@ -722,7 +721,7 @@ left: 24px;
     padding: 0px;
     margin: 0px;
     margin-top: 20px;
-    margin-bottom: 20px;
+
     list-style: none;
 }
 .catalog-item {
@@ -730,6 +729,7 @@ left: 24px;
     width: 218px;
     min-height: 318px;
     border: 1px solid #eaeaea;
+    margin-bottom: 20px;
 }
 .catalog-item h3 {
     font-family: "PTSans", sans-serif;
@@ -738,6 +738,8 @@ left: 24px;
     line-height: 20px;
     text-align: center;
     color: #000000;
+
+    margin: 0px;
 }
 .catalog-item h3 a {
     text-decoration: none;
@@ -771,8 +773,9 @@ left: 24px;
     text-align: center;
     text-decoration: line-through;
     color: #a9a9a9;
-
-    margin-top: 18px;
+    margin: 0px;
+    margin-top: 13px;
+    margin-bottom: 10px;
 }
 .price {
     display: flex;
@@ -796,7 +799,7 @@ left: 24px;
     cursor: default;
 }
 .no-discount {
-    margin-top: 50px;
+    margin-top: 43px;
 }
 .price::after {
     position: absolute;
@@ -969,8 +972,8 @@ left: 24px;
 /*--------------------Сервисы---------------------*/
 .services {
     display: block;
-    margin-top: 65px;
-    padding-top: 68px;
+    margin-top: 85px;
+    padding-top: 60px;
     background-color: #f4f7f9;
   }
 .services h2 {
@@ -980,6 +983,8 @@ left: 24px;
     line-height: 30px;
     text-transform: uppercase;
     color: #000000;
+
+    margin: 0px;
 } 
 .title-services {
     display: block;
@@ -989,11 +994,13 @@ left: 24px;
     font-weight: normal;
     line-height: 24px;
     color: #000000;
+    margin: 0px;
+    margin-top: 25px;
 }
 .services-slider {
     display: flex;
     justify-content: space-between;
-    margin-top: 66px;
+    margin-top: 70px;
   }
 .services-control {
     width: 240px;
@@ -1016,19 +1023,17 @@ left: 24px;
     font-weight: bold;
     color: #ffffff;
     background-color: #32425c;
-    padding: 20px 22px 18px;
     box-shadow: inset 0 -1px 0 0 #293449, inset 0 1px 0 0 #405069;
     cursor: pointer;
+
+    padding: 15px 22px;
 }
 .services-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
- .description-services {
-     display: block;
- }
- .description-services h2 {
+ .services-item h2 {
     font-family: "Cuprum", sans-serif;
     font-size: 36px;
     font-weight: normal;
@@ -1037,22 +1042,23 @@ left: 24px;
 
     margin: 0px;
 }
-.description-delivery-services,
-.description-guarantee-services,
-.description-credit-services {
+.services-item p {
     font-family: "PTSans", sans-serif;
     font-size: 13px;
     font-weight: normal;
     line-height: 24px;
     color: #000000;
+
+    margin: 0px;
+    margin-top: 24px;
 }
-.description-delivery-services {
+.services-item:first-child p {
     width: 295px;
 }
-.description-guarantee-services {
+.services-item:nth-child(2) p {
     width: 399px;
 }
-.description-credit-services {
+.services-item:last-child p  {
     width: 299px;
 }
 .services-item {
@@ -1069,7 +1075,7 @@ left: 24px;
 .services-item:first-child {
     background-image: url("../img/service-delivery.png");
     background-repeat: no-repeat;
-    background-position: 150px 0px;
+    background-position: 150px 25px;
 }
 .services-item .wrapper {
     display: flex;
@@ -1124,7 +1130,7 @@ left: 24px;
 .company {
     display: flex;
     justify-content: space-between;
-    margin-top: 82px;
+    margin-top: 78px;
     margin-bottom: 86px;
 }
 .about-company {
@@ -1147,7 +1153,7 @@ left: 24px;
     line-height: 24px;
     color: #000000;
     margin: 0px;
-    margin-top: 30px;
+    margin-top: 26px;
 }
 .delivery-description {
     font-family: "PTSans", sans-serif;
@@ -1156,7 +1162,7 @@ left: 24px;
     line-height: 24px;
     color: #000000;
     margin: 0px;
-    margin-top: 30px;
+    margin-top: 24px;
     padding-right: 100px;
 }
 .companies {
@@ -1240,11 +1246,11 @@ left: 24px;
     line-height: 24px;
     color: #000000;
     margin: 0px;
-    margin-top: 30px;
+    margin-top: 24px;
     padding-right: 100px; 
 }
 .contact-company img {
-    margin-top: 36px;
+    margin-top: 30px;
 }
 .write-us-button {
     display: flex;
@@ -1266,7 +1272,7 @@ left: 24px;
     border: none;
     border-radius: 3px;
 
-    margin-top: 36px;
+    margin-top: 38px;
 }
 .write-us-button:hover,
 .write-us-button:focus {
@@ -1295,8 +1301,8 @@ left: 24px;
     list-style: none;
 }
 .footer-menu-item {
-    margin-left: 60px;
-    padding-top:42px;
+    margin-left: 59px;
+    padding-top: 33px;
 }
 .footer-menu-item:nth-last-child() {
     margin-left: 0;
@@ -1320,7 +1326,7 @@ left: 24px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 32px;
+    margin-top: 26px;
 }
 .footer-contacts {
     display: block;
@@ -1333,7 +1339,7 @@ left: 24px;
     line-height: 24px;
     color: #ffffff;
     margin: 0px;
-    margin-bottom: 53px;
+    margin-bottom: 47px;
 }
 .footer-sub-menu ul {
     display: flex;
@@ -1380,7 +1386,7 @@ left: 24px;
     line-height: 18px;
     color: #ffffff;
 
-    width: 223px;
+    width: 240px;
     margin: 0px;
     padding: 35px 0px;
 }
@@ -1388,10 +1394,10 @@ left: 24px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 141px;
-     margin: 0 auto;
-     padding: 0;
-  
+    min-width: 140px;
+    margin: 0px;
+    margin: 0 100px 0 138px;
+    padding: 0px;
     list-style: none;
 }
 .social-button {
@@ -1403,8 +1409,9 @@ left: 24px;
     height: 42px;
     border: none;
     border-radius: 50%;
-  
     background-color: #212a3a;
+
+    margin-right: 6px;
   }
 .social-button:hover,
 .social-button:focus {
@@ -1623,7 +1630,8 @@ left: 24px;
     justify-content: space-between;
     height: 38px;
     padding: 0 16px 0 19px;
-    margin: 20px 0;
+    margin: 0px;
+    margin-top: 20px;
     background-color: #f7f3ec;
 
     font-family: "PTSans", sans-serif;
@@ -1633,7 +1641,26 @@ left: 24px;
     text-transform: uppercase;
     color: #000;
 }
+.filters fieldset {
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    /*margin-bottom: 21px;*/
+    border: none;
+}
+.filters fieldset:first-of-type {
+    margin-top: 11px;
+}
+.filters fieldset:nth-of-type(2) {
+    margin-top: 45px;
+    padding-bottom: 22px;
+}
+.filters fieldset:nth-of-type(3) {
+    margin-top: 5px;
+}
 .cost {
+    margin: 0px;
+    margin-top: 11px;
     padding-bottom: 25px;
     position: relative;
 }
@@ -1642,11 +1669,11 @@ left: 24px;
     content: "";
     width: 220px;
     height: 1px;
-    top: 198px;
+    top: 194px;
     left: 0px;
     background-color: #e5e5e5;
 }
-.cost p {
+.cost legend {
     font-family: "PTSans", sans-serif;
     font-size: 17px;
     font-weight: bold;
@@ -1739,16 +1766,6 @@ left: 24px;
     line-height: 18px;
     color: #000000;
 }
-fieldset {
-    padding: 0;
-    margin: 0;
-    margin-top: 21px;
-    margin-bottom: 21px;
-    border: none;
-}
-.filter-block fieldset:first-child {
-    margin-bottom: 25px;
-}
 .filter-block legend {
     font-family: "PTSans", sans-serif;
     font-size: 17px;
@@ -1759,7 +1776,7 @@ fieldset {
     text-transform: uppercase;
     color: #000000;
 
-    margin-bottom: 18px;
+    margin-bottom: 11px;
 }
 .brands-filter {
     position: relative;
@@ -1880,6 +1897,7 @@ fieldset {
     border: 1px solid #e5e5e5;
     border-radius: 3px;
 
+    margin-top: 65px;
     cursor: pointer;
 }
 
@@ -1907,8 +1925,9 @@ fieldset {
     height: 38px;
     background-color: #f7f3ec;
     margin-top: 20px;
+    border: none;
 }
-.catalog-sort span {
+.catalog-sort legend {
     font-family: "PTSans", sans-serif;
     font-size: 13px;
     font-weight: normal;
@@ -1999,7 +2018,7 @@ fieldset {
 
     padding: 0px;
     margin: 0px;
-    margin-top: 52px;
+    margin-top: 25px;
     list-style-type: none;
 }
 .pagination-item {
@@ -2023,6 +2042,9 @@ fieldset {
     color: #000000;
     background-color: #ffffff;
   }
+.pagination-item:last-child a {
+    padding: 10px 27px;
+}
 .active a {
     color: #ffffff;
     background-color: #ee3643; 
@@ -2042,7 +2064,7 @@ fieldset {
 .description-catalog {
     background-color:#f4f7f9;
     margin-top: 60px;
-    padding-top: 68px;
+    padding-top: 60px;
     padding-bottom: 73px;
 }
 .description-catalog h2 {
