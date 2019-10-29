@@ -56,9 +56,11 @@
 
 <main>
 <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов «Техномарт»</h1>
-<div class="container">
-    <section class="promo-block">
-        <h2 class="visually-hidden">Промо-материалы</h2>
+<!-- Промо-->
+
+<section class="promo">
+    <div class="container">
+        <h2 class="visually-hidden">Промо-материалы</h2>  
         <ul class="promo-block-list">
             <li class="promo-block-item material">
                 <p class="title-promo">Материалы</p>
@@ -72,44 +74,51 @@
                 <p class="title-promo">Техника</p>
                 <a href="#" class="promo-button">Для стройки</a>
             </li>
-                        
-            <li class="promo-block-item-slider">
-                <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-                <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-                    <div class="slider site-wrapper">
-                            <div class="slider-controls">
-                                <label for="product-1"><span class="visually-hidden">Первый</span></label>
-                                <label for="product-2"><span class="visually-hidden">Второй</span></label>
-                            </div>
-                            <div class="slider-controls-button">
-                                <label for="product-1"><span class="visually-hidden">Первый</span></label>
-                                <label for="product-2"><span class="visually-hidden">Второй</span></label>
-                            </div>
-                            <ul class="slider-list">
-                                <li class="slider-item slide drel" id="slide1">
-                                <p class="title-slider"><strong>Дрели</strong></p>
-                                <p class="description-slider">Соседям на радость!</p>
-                                <a href="catalog.html" class="button-slider">Открыть каталог</a>
-                            </li>
-                            <li class="slider-item slide" id="slide2">
-                                <p class="title-slider"><strong>Перфораторы</strong></p>
-                                <p class="description-slider">Настоящие мужские игрушки</p>
-                                <a href="catalog.html" class="button-slider">Открыть каталог</a>
-                            </li> 
-                            </ul>
-                    </div>
-            </li>
-            <li class="promo-block-item discounts">
+        </ul>	
+    </div>
+
+    <div class="container">
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+            <div class="slider site-wrapper">
+                <div class="slider-controls">
+                    <label for="product-1"><span class="visually-hidden">Первый</span></label>
+                    <label for="product-2"><span class="visually-hidden">Второй</span></label>
+                </div>
+                <div class="slider-controls-button">
+                    <label for="product-1"><span class="visually-hidden">Первый</span></label>
+                    <label for="product-2"><span class="visually-hidden">Второй</span></label>
+                </div>
+                <ul class="slider-list">
+                    <li class="slider-item slide drel" id="slide1">
+                        <p class="title-slider"><strong>Дрели</strong></p>
+                        <p class="description-slider">Соседям на радость!</p>
+                        <a href="catalog.html" class="button-slider">Открыть каталог</a>
+                    </li>
+                    <li class="slider-item slide" id="slide2">
+                        <p class="title-slider"><strong>Перфораторы</strong></p>
+                        <p class="description-slider">Настоящие мужские игрушки</p>
+                        <a href="catalog.html" class="button-slider">Открыть каталог</a>
+                    </li> 
+                </ul>
+            </div>
+                            
+                            
+            <ul class="promo-block-sublist">
+                <li class="promo-block-item discounts">
                     <p class="title-promo">Скидки 50%</p>
                     <a href="#" class="promo-button">На 350 товаров</a>
-            </li>
-            <li class="promo-block-item delivery">
+                </li>
+                <li class="promo-block-item delivery">
                     <p class="title-promo">Доставка</p>
                     <a href="#" class="promo-button">Бесплатно</a>
-            </li>
-        </ul>
-        </section>
+                </li>
+            </ul>
+    </div>
+</section>
 
+<!-- Популярные товары-->
+    <div class="container">
         <header class="popular-item">
             <h2>Популярные товары:</h2>
             <a class="popular-item-button" href="#">Все популярные товары</a>
@@ -160,6 +169,7 @@
                 <p class="price no-discount">12500 Р.</p>
             </li>
         </ul>
+        <!-- Популярные бренды-->
 
         <header class="popular-brands">
                 <h2>Популярные производители:</h2>
