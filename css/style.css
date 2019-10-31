@@ -7,10 +7,8 @@
 }
 .visually-hidden {
     position: absolute;
-  
     width: 1px;
     height: 1px;
-  
     clip: rect(0, 0, 0, 0);
 }
 
@@ -34,7 +32,6 @@
     position: relative;
     width: 220px;
     height: 42px;
-
     background-image: url("../img/logo-technomart.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -71,7 +68,6 @@
 .search-form span {
     position: absolute;
     content: "";
-
     width: 17px;
     height: 17px;
     top: 12px;
@@ -89,6 +85,13 @@
     padding: 12px 0px 12px 50px;
 }
 .search-form input[type="search"]::placeholder {
+    font-family: "Cuprum", Arial ,sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #ffffff;
+}
+.search-form input:-ms-input-placeholder {
     font-family: "Cuprum", Arial ,sans-serif;
     font-size: 17px;
     font-weight: normal;
@@ -184,7 +187,6 @@
 }
 .basket-active {
     position: relative;
-
     font-family: "Cuprum", Arial ,sans-serif;
     font-size: 17px;
     font-weight: normal;
@@ -240,7 +242,6 @@
     font-family: "Cuprum", Arial ,sans-serif;
     color: #ee3643;
     font-style: italic;
-
 }
 .header-contacts {
     margin-left: 5px;
@@ -279,14 +280,12 @@
 }
 .authorization {
     display: flex;
-
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
 .login {
     position: relative;
-
     display: block;
     font-family: "Cuprum", Arial ,sans-serif;
     font-size: 21px;
@@ -318,7 +317,6 @@
 
 .registration {
     display: block;
-
     font-family: "Cuprum", Arial ,sans-serif;
     font-size: 21px;
     font-weight: normal;
@@ -327,10 +325,8 @@
     text-align: center;
     color: #000000;
     background-color: #ffffff;
-
     margin-left: 10px;
     padding: 11px 25px 11px 25px;
-
 }
 .login:hover,
 .login:focus,
@@ -365,8 +361,22 @@
     line-height: 17px;
     text-decoration: none;
     color: #ffffff;
-
-    padding: 21px 20px 19px 20px;
+    padding: 21px 22px 19px 22px;
+}
+.site-navigation li:nth-child(1) a {
+    padding: 21px 30px 19px 30px;
+}
+.site-navigation li:nth-child(3) a {
+    padding: 21px 22px 19px 20px;
+}
+.site-navigation li:nth-child(5) a {
+    padding: 21px 30px 19px 15px;
+}
+.site-navigation li:nth-child(6) a {
+    padding: 21px 30px 19px 15px;
+}
+.site-navigation li:nth-child(7) a {
+    padding: 21px 32px 19px 15px;
 }
 .site-navigation a:hover {
     background-color:#293449
@@ -392,7 +402,6 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-
     padding: 0;
     margin: 0;
     list-style: none;
@@ -404,7 +413,6 @@
 }
 .promo-block-item {
     position: relative;
-
     width: 300px;
     min-height: 123px;
     padding: 20px 23px;
@@ -471,7 +479,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 135px;
     height: 38px;
     font-family: "Cuprum", Arial ,sans-serif;
@@ -481,7 +488,6 @@
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
-
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 3px;
 }
@@ -524,84 +530,80 @@
     display: none;
 }
 .slider {
-  position: relative;
+    position: relative;
 }
 .site-wrapper {
-  min-width: 620px;
-  height: 266px;
+    min-width: 620px;
+    height: 266px;
 }
 .slider-list {
-  margin: 0;
-  padding: 0; 
-  list-style: none;
+    margin: 0;
+    padding: 0; 
+    list-style: none;
 }
 .slider-item {
-  width: 620px;
-  height: 266px;
-  position: relative;
-
-  margin-right: 20px;
+    width: 620px;
+    height: 266px;
+    position: relative;
+    margin-right: 20px;
 }
 .slider-item:first-of-type {
-  background-image: url("../img/slide-image.jpg");
+    background-image: url("../img/slide-image.jpg");
 }
 .slider-item:last-of-type {
-  background-image: url("../img/slide-image2.jpg");
+    background-image: url("../img/slide-image2.jpg");
 }
 .slider-controls label {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 10px;
-
-  vertical-align: top;
-
-  background-color: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    vertical-align: top;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
 }
 .slider-controls {
-  position: absolute;
-  top: 219px;
-  left: 294px;
-  z-index: 20;
-  
-  font-size: 0;
+    position: absolute;
+    top: 219px;
+    left: 294px;
+    z-index: 20;
+    font-size: 0;
 }
 .slider-controls-button {
-  width: 587px;
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 120px;
-  left: 20px;
-  z-index: 20;
+    width: 587px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    z-index: 20;
 }
 .slider-controls-button label {
-  position:relative;
-  display:inline-block;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  padding: 10px;
+    position:relative;
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding: 10px;
 }
 .slider-controls-button label::before {
-  position: absolute;
-  content: "";
-  width: 24px;
-  height: 24px;
-  border: 3px solid #ffffff;
-  top: 0;
-  transform: rotate(45deg);
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    border: 3px solid #ffffff;
+    top: 0;
+    transform: rotate(45deg);
 }
 .slider-controls-button label:first-child::before {
-  border-top-style:none;
-  border-right-style:none;   
+    border-top-style:none;
+    border-right-style:none;   
 }
 .slider-controls-button label:last-child::before {
-  border-left-style:none;
-  border-bottom-style:none;
+    border-left-style:none;
+    border-bottom-style:none;
 }
 
 .title-slider {
@@ -611,7 +613,6 @@
     line-height: 36px;
     color: #ffffff;
     text-transform: uppercase;
-
     position: absolute;
     top: -14px;
     left: 26px;
@@ -622,54 +623,50 @@
     font-weight: normal;
     line-height: 24px;
     color: #ffffff;
-
     position: absolute;
     top: 44px;
     left: 24px;
 }
 .button-slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 195px;
-  height: 38px;
-
-  font-family: "Cuprum", Arial ,sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-
-  background-color: #ee3643;
-  border-radius: 3px;
-
-  position: absolute;
-  top: 206px;
-  left: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 195px;
+    height: 38px;
+    font-family: "Cuprum", Arial ,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ee3643;
+    border-radius: 3px;
+    position: absolute;
+    top: 206px;
+    left: 26px;
 }
 .button-slider:hover,
 .button-slider:focus {
-  background-color: #ca2c37;
+    background-color: #ca2c37;
 }
 .button-slider:active {
-  background-color: #ba2732;
+    background-color: #ba2732;
 }
 #product-1:checked ~ .site-wrapper #slide1,
 #product-2:checked ~ .site-wrapper #slide2 {
-  display: block;
+    display: block;
 }
 #product-1:checked ~ .site-wrapper {
-  background-image: url("img/slide-image.jpg");
+    background-image: url("img/slide-image.jpg");
 }
 #product-2:checked ~ .site-wrapper {
-  background-image: url("img/slide-image2.jpg");
+    background-image: url("img/slide-image2.jpg");
 }
 #product-1:checked ~ .site-wrapper .slider-controls label[for="product-1"],
 #product-2:checked ~ .site-wrapper .slider-controls label[for="product-2"] {
-  background-color: #ee3643;
+    background-color: #ee3643;
 }
 
 /*--------------------Популярные товары---------------------*/
@@ -698,11 +695,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 253px;
     height: 38px;
     background-color: #ee3643;
-
     font-family: "Cuprum", Arial ,sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -727,11 +722,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
     padding: 0px;
     margin: 0px;
     margin-top: 20px;
-
     list-style: none;
 }
 .catalog-item {
@@ -748,13 +741,13 @@
     line-height: 20px;
     text-align: center;
     color: #000000;
-
     margin: 0px;
     margin-top: 5px;
 }
 .catalog-item h3 a {
     text-decoration: none;
     color: #000000;
+    padding: 0 10px;
 }
 .catalog .catalog-item {
     position: relative;
@@ -763,7 +756,6 @@
     position: absolute;
     top: -1px;
     right: 0px;
-    
     width: 60px;
     height: 60px;
     text-indent: -1000px;
@@ -796,7 +788,6 @@
     height: 38px;
     position: relative;
     background-color: #ee3643;
-
     font-family: "PTSans", sans-serif;
     font-size: 17px;
     font-weight: bold;
@@ -806,7 +797,6 @@
     color: #ffffff;
     border-radius: 3px;
     margin: -2px auto 20px;
-
     cursor: default;
 }
 .no-discount {
@@ -825,15 +815,12 @@
 .catalog-item .actions {
     position: absolute;
     top: 0;
-    left: 0;
-        
+    left: 0;  
     width: 218px;
     height: 88px;
-    padding: 40px 0;
-        
+    padding: 40px 0;    
     background-color: #ffffff;
     z-index: 10;
-
     list-style: none;
 }
 .catalog-item .actions .buy,
@@ -841,12 +828,12 @@
     display: block;
     width: 133px;
     margin: 0 auto;
-    margin-bottom: 7px;
+    margin-top: 4px;
+    margin-bottom: 6px;
     padding: 7px 0px;
     background-color: #63a63e;
     border: 3px solid #63a63e;
     border-radius: 3px;
-
     font-family: "Cuprum", Arial ,sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -868,7 +855,7 @@
     width: 15px;
     height: 15px;
     top: 8px;
-    left: 17px;
+    left: 14px;
     background-image: url("../img/icon-basket.svg");
     opacity: 0.3;
 }
@@ -909,7 +896,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: #f9f5f0;
 }
 .popular-brands h2 {
@@ -929,11 +915,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 253px;
     height: 38px;
     background-color: #ee3643;
-
     font-family: "Cuprum", Arial ,sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -958,7 +942,6 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -973,7 +956,6 @@
     height: 143px;
     border: 1px solid #eaeaea;
     margin-bottom: 20px;
-    
 }
 .brands-item:hover,
 .brands-item:focus {
@@ -996,7 +978,6 @@
     line-height: 30px;
     text-transform: uppercase;
     color: #000000;
-
     margin: 0px;
     margin-top: 5px;
 } 
@@ -1010,7 +991,6 @@
     color: #000000;
     margin: 0px;
     margin-top: 25px;
-
     letter-spacing: -0.2px;
 }
 .services-slider {
@@ -1041,7 +1021,6 @@
     background-color: #32425c;
     box-shadow: inset 0 -1px 0 0 #293449, inset 0 1px 0 0 #405069;
     cursor: pointer;
-
     padding: 17px 22px;
 }
 .services-list {
@@ -1055,7 +1034,6 @@
     font-weight: normal;
     line-height: 36px;
     color: #32425c;
-
     margin: 0px;
 }
 .services-item p {
@@ -1064,7 +1042,6 @@
     font-weight: normal;
     line-height: 24px;
     color: #000000;
-
     margin: 0px;
     margin-top: 24px;
 }
@@ -1119,11 +1096,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 195px;
     height: 38px;
     background-color: #ff5357;
-
     font-family: "Cuprum", Arial ,sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -1131,10 +1106,8 @@
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-
     border: none;
     border-radius: 3px;
-
     margin-top: 30px;
 }
 .send-request-button:hover,
@@ -1153,7 +1126,7 @@
 .company {
     display: flex;
     justify-content: space-between;
-    margin-top: 83px;
+    margin-top: 81px;
     margin-bottom: 86px;
 }
 .about-company {
@@ -1177,7 +1150,6 @@
     color: #000000;
     margin: 0px;
     margin-top: 26px;
-
     letter-spacing: -0.3px;
 }
 .delivery-description {
@@ -1189,7 +1161,6 @@
     margin: 0px;
     margin-top: 24px;
     padding-right: 100px;
-
     letter-spacing: -0.4px;
 }
 .companies {
@@ -1206,7 +1177,6 @@
     font-weight: bold;
     line-height: 20px;
     color: #000000;
-
     margin-top: 20px;
 }
 .companies li:last-child {
@@ -1217,7 +1187,6 @@
     content: "";
     width: 25px;
     height: 2px;
-
     top: 8px;
     left: -36px;
     background-color: #ee3643;
@@ -1226,11 +1195,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 220px;
     height: 38px;
     background-color: #ee3643;
-
     font-family: "Cuprum", Arial ,sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -1238,10 +1205,8 @@
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-
     border: none;
     border-radius: 3px;
-
     margin-top: 36px;
 }
 .button-about-company:hover,
@@ -1261,7 +1226,6 @@
     line-height: 30px;
     text-transform: uppercase;
     color: #000000;
-
     margin: 0px;
 }
 .contact-company p {
@@ -1275,7 +1239,6 @@
     margin: 0px;
     margin-top: 24px;
     padding-right: 100px; 
-
     letter-spacing: -0.4px;
 }
 .contact-company img {
@@ -1285,11 +1248,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 300px;
     height: 38px;
     background-color: #ee3643;
-
     font-family: "Cuprum", Arial ,sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -1297,10 +1258,8 @@
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-
     border: none;
     border-radius: 3px;
-
     margin-top: 38px;
 }
 .write-us-button:hover,
@@ -1360,7 +1319,6 @@
 .footer-contacts {
     width: 325px;
     min-height: 42px;
-
     font-family: "Cuprum", Arial ,sans-serif;
     font-size: 18px;
     font-weight: normal;
@@ -1438,7 +1396,6 @@
     border: none;
     border-radius: 50%;
     background-color: #212a3a;
-
     margin-right: 6px;
   }
 .social-button:hover,
@@ -1515,10 +1472,8 @@
 .user-profile::before {
     position: absolute;
     content: "";
-
     width: 20px;
     height: 18px;
-
     top: 12px;
     left: 14px;
     background-image: url("../img/icon-user.svg");
@@ -1544,10 +1499,8 @@
 .user-deauthorization::after {
     position: absolute;
     content: "";
-
     width: 20px;
     height: 17px;
-
     top: 13px;
     left: 2px;
     background-image: url("../img/icon-logout.svg");
@@ -1568,13 +1521,10 @@
 .user-details::before {
     position: absolute;
     content: "";
-
     width: 4px;
     height: 5px;
-
     top: 8px;
     left: 90px;
-
     background-image: url("../img/marker.png");
 }
 .user-details a {   
@@ -1600,7 +1550,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
     margin: 0;
     padding: 0;
     padding-top: 20px;
@@ -1655,13 +1604,13 @@
     padding-right: 27px;
 }
 .breadcrumbs-item:first-child a {
-    margin-right: 7px;
-}
-.breadcrumbs-item:nth-child(2) a {
     margin-right: 10px;
 }
+.breadcrumbs-item:nth-child(2) a {
+    margin-right: 8px;
+}
 .breadcrumbs-item:nth-child(3) a {
-    margin-right: 9px;
+    margin-right: 10px;
 }
 /*Заголовок страницы*/
 
@@ -1669,7 +1618,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: #f2f6f8;
 }
 .page-title h1 {
@@ -1679,7 +1627,6 @@
     line-height: 30px;
     text-transform: uppercase;
     color: #32425c;
-
     padding-top: 30px;
     padding-left: 28px;
     padding-bottom: 30px;
@@ -1700,9 +1647,8 @@
     height: 38px;
     padding: 0 16px 0 19px;
     margin: 0px;
-    margin-top: 20px;
+    margin-top: 19px;
     background-color: #f7f3ec;
-
     font-family: "PTSans", sans-serif;
     font-size: 13px;
     font-weight: normal;
@@ -1846,7 +1792,6 @@
     line-height: 30px;
     text-transform: uppercase;
     color: #000000;
-
     letter-spacing: 0.5px;
 }
 .filter-block legend:nth-child(1){
@@ -1884,16 +1829,13 @@
   }
 .filter-option label {
     position: relative;
-  
     display: block;
-  
     cursor: pointer;
     user-select: none;
 }
 .filter-input-checkbox + label::before {
     content: "";
     position: absolute;
-  
     width: 23px;
     height: 23px;
     top: 0px;
@@ -1907,9 +1849,7 @@
 }
 .filter-input-checkbox:checked + label::after {
     content: "";
-  
     position: absolute;
-  
     width: 27px;
     height: 23px;
     top: 0px;
@@ -1926,7 +1866,6 @@
 .filter-input-radio + label::before {
     content: "";
     position: absolute;
-  
     width: 25px;
     height: 25px;
     top: -3px;
@@ -1941,7 +1880,6 @@
 .filter-input-radio:checked + label::after {
     content: "";
     position: absolute;
-  
     width: 25px;
     height: 25px;
     top: -3px;
@@ -1957,10 +1895,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 140px;
     height: 38px;
-
     font-family: "PTSans", sans-serif;
     font-size: 13px;
     font-weight: normal;
@@ -1970,7 +1906,6 @@
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
-
     margin-top: 57px;
     cursor: pointer;
 }
@@ -1995,7 +1930,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     height: 38px;
     background-color: #f7f3ec;
     margin-top: 20px;
@@ -2008,7 +1942,6 @@
     line-height: 18px;
     text-transform: uppercase;
     color: #000000;
-
     margin-left: 19px;
 }
 .sort-list {
@@ -2056,7 +1989,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -2083,7 +2015,6 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
-
     padding: 0px;
     margin: 0px;
     margin-top: 32px;
@@ -2098,7 +2029,6 @@
 .pagination-item a {
     display: block;
     padding: 10px 14px;
-
     font-family: "PTSans", sans-serif;
     font-size: 13px;
     font-weight: normal;
@@ -2131,7 +2061,7 @@
 
 .description-catalog {
     background-color:#f4f7f9;
-    margin-top: 63px;
+    margin-top: 62px;
     padding-top: 60px;
     padding-bottom: 70px;
 }
@@ -2152,12 +2082,8 @@
     color: #000000;
     margin: 0px;
     margin-top: 25px;
-
     padding-right: 15px;
 }
-
-
-
 
 
 /*--------------------------------------Модальные окна--------------------------------------*/
