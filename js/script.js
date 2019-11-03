@@ -53,5 +53,6 @@ var email = writeUsForm.querySelector("[name=email]");
     writeUsForm.classList.remove("modal-error");
     writeUsForm.offsetWidth = writeUsForm.offsetWidth;
     writeUsForm.classList.add("modal-error");
+    console.log("Ошибка валидации формы")
   }
 });
