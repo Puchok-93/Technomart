@@ -736,9 +736,6 @@
     text-decoration: none;
     color: #000000;
 }
-.catalog .catalog-item {
-    position: relative;
-}
 .catalog-item .flag {
     position: absolute;
     top: -1px;
@@ -872,11 +869,15 @@
     opacity: 0.3;
 }
 .catalog-item .actions {
-    display: none;
+    visibility: hidden;
 }
 .catalog-item:hover .actions,
 .catalog-item:focus .actions {
-    display: block;
+    visibility: visible;
+}
+.catalog-item:hover,
+.catalog-item:focus {
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
 }
 /*--------------------Популярные производители---------------------*/
 
@@ -1836,7 +1837,8 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
-.filter-input-checkbox + label:hover::before {
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before {
     background-image: url("../img/checkbox-off-hover.svg");
 }
 .filter-input-checkbox:checked + label::after {
@@ -1850,7 +1852,8 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
-.filter-input-checkbox:checked + label:hover::after {
+.filter-input-checkbox:checked:hover + label::after,
+.filter-input-checkbox:checked:focus + label::after {
     background-image: url("../img/checkbox-on-hover.svg");
 }
   /* disablad*/
@@ -1873,7 +1876,8 @@
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-.filter-input-radio + label:hover::before {
+.filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before {
     background-image: url("../img/radio-off-hover.svg");
 }
 .filter-input-radio:checked + label::after {
@@ -1887,7 +1891,8 @@
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-.filter-input-radio:checked + label:hover::after {
+.filter-input-radio:checked:hover + label::after,
+.filter-input-radio:checked:focus + label::after {
     background-image: url("../img/radio-on-hover.svg");
 }
 /*Radio disabled*/

@@ -32,27 +32,26 @@ var link = document.querySelector(".write-us-button");
 var writeUsForm = document.querySelector(".write-us-form");
 var close = writeUsForm.querySelector(".modal-close");
 
-var form = writeUsForm.querySelector("form");
-var name = writeUsForm.querySelector("[name=user-name]");
+var name = writeUsForm.querySelector("[name=username]");
 var email = writeUsForm.querySelector("[name=email]");
 
     link.addEventListener("click", function (evt) {
     evt.preventDefault();
     writeUsForm.classList.add("write-us-form-show");
+    console.log("Вызвали модальное окно")
 });
-
     close.addEventListener("click", function (evt) {
     evt.preventDefault();
     writeUsForm.classList.remove("write-us-form-show");
+    console.log("Закрыли модальное окно")
     writeUsForm.classList.remove("modal-error");
 });
-
-  form.addEventListener("submit", function (evt) {
-    form.classList.remove("modal-error")
-    if (!username.value || !email.value) {
+    writeUsForm.addEventListener("submit", function (evt) {
+    writeUsForm.classList.remove("modal-error");
+    if (!name.value || !email.value) {
     evt.preventDefault();
-    form.classList.remove("modal-error");
-    form.offsetWidth = form.offsetWidth;
-    form.classList.add("modal-error");
+    writeUsForm.classList.remove("modal-error");
+    writeUsForm.offsetWidth = writeUsForm.offsetWidth;
+    writeUsForm.classList.add("modal-error");
   }
 });
