@@ -807,8 +807,8 @@
     z-index: 10;
     list-style: none;
 }
-.catalog-item .actions .buy,
-.catalog-item .actions .bookmark {
+.actions .buy,
+.actions .bookmark {
     display: block;
     width: 133px;
     margin: 0 auto;
@@ -827,13 +827,13 @@
     text-transform: uppercase;
     color: #ffffff;
 }
-.catalog-item .actions .buy {
+.actions .buy {
     border-bottom-color: #367315;
 }
-.catalog-item .actions .buy {
+.actions .buy {
     position: relative;
 }
-.catalog-item .actions .buy::before {
+.actions .buy::before {
     position: absolute;
     content: "";
     width: 15px;
@@ -843,28 +843,28 @@
     background-image: url("../img/icon-basket.svg");
     opacity: 0.3;
 }
-.catalog-item .actions .buy:hover::before {
+.actions .buy:hover::before {
     opacity: 1;
 }
-.catalog-item .actions .bookmark {
+.actions .bookmark {
     background-color: #ffffff;
     color: #32425c;
 }
-.catalog-item .actions .buy:hover,
-.catalog-item .actions .buy:focus {
+.actions .buy:hover,
+.actions .buy:focus {
     background-color: #5fbb2d;
     border-color: #5fbb2d;
     border-bottom-color: #367315;
 }
-.catalog-item .actions .buy:active {
+.actions .buy:active {
     background-color: #518534;
     border-color: #518534;
 }
-.catalog-item .actions .bookmark:hover,
-.catalog-item .actions .bookmark:focus {
+.actions .bookmark:hover,
+.actions .bookmark:focus {
     border-color: #32425c;
 }
-.catalog-item .actions .bookmark:active {
+.actions .bookmark:active {
     border-color: #32425c;
     opacity: 0.3;
 }
@@ -1047,9 +1047,9 @@
     min-height: 285px;
     margin-left: 80px;
 }
-#services-1:checked~.services-list .services-item:first-child, 
-#services-2:checked~.services-list .services-item:nth-child(2),
-#services-3:checked~.services-list .services-item:last-child {
+#services-1:checked ~ .services-list .services-item:first-child, 
+#services-2:checked ~ .services-list .services-item:nth-child(2),
+#services-3:checked ~ .services-list .services-item:last-child {
     display: block;
 }
 .services-item:first-child {
@@ -1072,9 +1072,9 @@
     background-repeat: no-repeat;
     background-position: 155px 0px;
 }
-#services-1:checked~.services-control .services-control-item-1, 
-#services-2:checked~.services-control .services-control-item-2, 
-#services-3:checked~.services-control .services-control-item-3 {
+#services-1:checked ~ .services-control .services-control-item-1, 
+#services-2:checked ~ .services-control .services-control-item-2, 
+#services-3:checked ~ .services-control .services-control-item-3 {
     background-color: #ffffff;
     color: #32425c;
     box-shadow: none;
