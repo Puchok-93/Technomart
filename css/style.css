@@ -1,3 +1,62 @@
+/*Шрифты*/
+/*Cuprum*/
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/Cuprum/Cuprum-Regular.woff") format("woff"),
+        url("../fonts/Cuprum/Cuprum-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/Cuprum/Cuprum-Italic.woff") format("woff"),
+        url("../fonts/Cuprum/Cuprum-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/Cuprum/Cuprum-BoldItalic.woff") format("woff"),
+        url("../fonts/Cuprum/Cuprum-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/Cuprum/Cuprum-Bold.woff") format("woff"),
+        url("../fonts/Cuprum/Cuprum-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+/*PT Sans*/
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/PTSans/PTSans-Regular.woff") format("woff"),
+        url("../fonts/PTSans/PTSans-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/PTSans/PTSans-Bold.woff") format("woff"),
+        url("../fonts/PTSans/PTSans-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/PTSans/PTSans-Italic.woff") format("woff"),
+        url("../fonts/PTSans/PTSans-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/PTSans/PTSans-BoldItalic.woff") format("woff"),
+        url("../fonts/PTSans/PTSans-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
 /*Общее*/
 .container {
     width: 940px;
@@ -944,6 +1003,22 @@
     height: 143px;
     border: 1px solid #eaeaea;
     margin-bottom: 20px;
+}
+.dewalt {
+    margin-bottom: 3px;
+}
+.interscol {
+    margin-bottom: 13px;
+}
+.makita {
+    margin-bottom: 4px;
+}
+.hitachi {
+    margin-top: 5px;
+    margin-left: 2px;
+}
+.metabo {
+    margin-bottom: 5px;
 }
 .brands-item:hover,
 .brands-item:focus {
