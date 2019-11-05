@@ -318,7 +318,7 @@
     text-decoration: none;
     border: 3px solid #ffffff;
     margin-bottom: 3px;
-    padding: 9px 50px 10px 73px;
+    padding: 9px 53px 10px 69px;
 }
 .phone::before {
     position: absolute;
@@ -326,7 +326,7 @@
     width: 19px;
     height: 19px;
     top: 9px;
-    left: 15px;
+    left: 11px;
     background-image: url("../img/icon-phone.svg")
 }
 .address {
@@ -356,15 +356,15 @@
     text-decoration: none;
     color: #000000;
     background-color: #ffffff;
-    padding: 11px 27px 11px 46px;
+    padding: 11px 25px 11px 45px;
 }
 .login::before {
     position: absolute;
     content: "";
     width: 20px;
     height: 17px;
-    top: 12px;
-    left: 16px;
+    top: 13px;
+    left: 14px;
     background-image: url("../img/icon-login.svg");
     opacity: 0.3;
 }
@@ -1633,7 +1633,7 @@
     content: "";
     width: 4px;
     height: 5px;
-    top: 8px;
+    top: 7px;
     left: 90px;
     background-image: url("../img/marker.png");
 }
@@ -1645,7 +1645,7 @@
     color: #32425c;
 }
 .user-details a:first-child {   
-    margin-right: 28px;
+    margin-right: 31px;
 }
 .user-details a:hover,
 .user-details a:focus {
@@ -2076,7 +2076,7 @@
     align-items: center;
     width: 355px;
     margin: 0px;
-    margin-left: 100px;
+    margin-left: 95px;
     padding: 0px;
     list-style: none;
 }
@@ -2141,14 +2141,18 @@
     list-style-type: none;
 }
 .pagination-item {
-    margin-right: 10px;
+    margin-right: 8px;
 }
 .pagination-item:last-child {
     margin-right: 0;
   }
 .pagination-item a {
-    display: block;
-    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    /*padding: 10px 15px;*/
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     font-weight: normal;
@@ -2161,7 +2165,12 @@
     background-color: #ffffff;
   }
 .pagination-item:last-child a {
-    padding: 10px 27px;
+    /*padding: 10px 27px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 38px;
 }
 .active a {
     color: #ffffff;
