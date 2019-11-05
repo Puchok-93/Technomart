@@ -297,6 +297,7 @@
     width: 199px;
     margin: 0px;
     margin-left: 52px;
+    margin-top: 1px;
     font-size: 16px;
     line-height: 23px;
     font-family: "Cuprum", Arial ,sans-serif;
@@ -404,7 +405,7 @@
     flex-wrap: wrap;
     width: 100%;
     background-color: #32425c;
-    border-bottom: 5px solid #293449;
+    border-bottom: 3px solid #293449;
     padding: 0px;
     margin: 0px;
     margin-top: 37px;
@@ -423,6 +424,15 @@
     color: #ffffff;
     padding: 22px 30px 18px 30px;
 }
+.site-navigation .nav-company {
+    padding: 22px 30px 18px 34px;
+}
+.site-navigation .nav-delivery {
+    padding: 22px 25px 18px 33px;
+}
+.site-navigation .nav-contact {
+    padding: 22px 25px 18px 38px;
+}
 .site-navigation a:hover {
     background-color:#293449
 }
@@ -436,7 +446,7 @@
 
 /*------Первый промоблок-------*/
 .promo {
-    margin-top: 58px;
+    margin-top: 59px;
 }
 .promo .container:nth-child(2) {
     display:flex;
@@ -496,7 +506,7 @@
     width: 75px;
     height: 61px;
     top: 33px;
-    right: 27px;
+    right: 28px;
     background-image: url("../img/icon-tools.svg");
 }
 .technic {
@@ -508,8 +518,8 @@
     content: "";
     width: 78px;
     height: 62px;
-    top: 30px;
-    right: 30px;
+    top: 31px;
+    right: 31px;
     background-image: url("../img/icon-technic.svg");
 }
 .title-promo {
@@ -553,7 +563,7 @@
     width: 59px;
     height: 72px;
     top: 26px;
-    right: 44px;
+    right: 45px;
     background-image: url("../img/icon-discounts.svg");
 }
 .delivery {
@@ -565,8 +575,8 @@
     content: "";
     width: 78px;
     height: 63px;
-    top: 30px;
-    right: 30px;
+    top: 32px;
+    right: 31px;
     background-image: url("../img/icon-delivery.svg");
 }
 
@@ -691,7 +701,7 @@
     border-radius: 3px;
     position: absolute;
     top: 206px;
-    left: 26px;
+    left: 25px;
 }
 .button-slider:hover,
 .button-slider:focus {
@@ -754,7 +764,7 @@
     border: none;
     border-radius: 3px;
     margin-right: 24px;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
 }
 .popular-item-button:hover,
 .popular-item-button:focus {
@@ -809,7 +819,7 @@
 .flag-new {
     background-image: url("../img/newflag.png");
     background-repeat: no-repeat;
-    background-position: 0px 0px;
+    background-position: 2px 0px;
 }
 .discount {
     font-family: "PT Sans", Arial, sans-serif;
@@ -821,7 +831,7 @@
     text-decoration: line-through;
     color: #a9a9a9;
     margin: 0px;
-    margin-top: 13px;
+    margin-top: 11px;
     margin-bottom: 10px;
 }
 .price {
@@ -840,7 +850,7 @@
     text-transform: uppercase;
     color: #ffffff;
     border-radius: 3px;
-    margin: -2px auto 20px;
+    margin: -1px auto 20px;
     cursor: default;
 }
 .no-discount {
@@ -977,7 +987,7 @@
     border: none;
     border-radius: 3px;
     margin-right: 24px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 }
 .popular-brands-button:hover,
 .popular-brands-button:focus {
@@ -1006,25 +1016,34 @@
     border: 1px solid #eaeaea;
     margin-bottom: 20px;
 }
-.dewalt {
+.bosch {
     margin-bottom: 3px;
 }
+.dewalt {
+    margin-bottom: 5px;
+}
 .interscol {
-    margin-bottom: 13px;
+    margin-bottom: 16px;
+    margin-right: 2px;
+}
+.lg {
+    margin-bottom: 3px;
+    margin-right: 3px;
 }
 .makita {
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 .hitachi {
-    margin-top: 5px;
+    margin-bottom: -1px;
     margin-left: 5px;
 }
 .metabo {
-    margin-bottom: 5px;
-    margin-left: 3px;
+    margin-bottom: 8px;
+    margin-left: 4px;
 }
 .aeg {
     margin-bottom: 3px;
+    margin-left: 2px;
 }
 .brands-item:hover,
 .brands-item:focus {
@@ -1089,7 +1108,22 @@
     background-color: #32425c;
     box-shadow: inset 0 -1px 0 0 #293449, inset 0 1px 0 0 #405069;
     cursor: pointer;
-    padding: 17px 22px;
+}
+.services-control label:nth-child(1) {
+    padding-top: 15px;
+    padding-bottom: 19px;
+    padding-left: 20px;
+}
+.services-control label:nth-child(2) {
+    padding-top: 15px;
+    padding-bottom: 19px;
+    padding-left: 20px;
+}
+.services-control label:last-child {
+    padding-top: 11px;
+    padding-bottom: 19px;
+    padding-left: 20px;
+
 }
 .services-list {
     list-style: none;
@@ -1136,7 +1170,7 @@
 .services-item:first-child {
     background-image: url("../img/service-delivery.png");
     background-repeat: no-repeat;
-    background-position: 152px 26px;
+    background-position: 151px 25px;
 }
 .services-item .wrapper {
     display: flex;
@@ -1196,7 +1230,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 81px;
-    margin-bottom: 87px;
+    margin-bottom: 86px;
 }
 .about-company {
     width: 545px;
@@ -1255,7 +1289,7 @@
     content: "";
     width: 25px;
     height: 2px;
-    top: 10px;
+    top: 8px;
     left: -36px;
     background-color: #ee3643;
 }
@@ -1275,7 +1309,7 @@
     text-transform: uppercase;
     border: none;
     border-radius: 3px;
-    margin-top: 37px;
+    margin-top: 36px;
 }
 .button-about-company:hover,
 .button-about-company:focus {
@@ -1327,7 +1361,7 @@
     text-transform: uppercase;
     border: none;
     border-radius: 3px;
-    margin-top: 39px;
+    margin-top: 38px;
 }
 .write-us-button:hover,
 .write-us-button:focus {
@@ -1391,6 +1425,7 @@
     color: #ffffff;
     margin: 0px;
     margin-bottom: 48px;
+    margin-left: 3px;
 }
 .footer-phone {
     font-family: "Cuprum", Arial ,sans-serif;
@@ -1639,7 +1674,7 @@
     position: absolute;
     content: "";
     top: 2px;
-    left: 27px;
+    left: 30px;
     width: 8px;
     height: 13px;
     background-image: url("../img/icon-right-small.svg");
@@ -1648,7 +1683,7 @@
     position: absolute;
     content: "";
     top: 2px;
-    left: 73px;
+    left: 69px;
     width: 8px;
     height: 13px;
     background-image: url("../img/icon-right-small.svg");
@@ -1657,7 +1692,7 @@
     position: absolute;
     content: "";
     top: 2px;
-    left: 100px;
+    left: 98px;
     width: 8px;
     height: 13px;
     background-image: url("../img/icon-right-small.svg");
@@ -2023,6 +2058,7 @@
     height: 38px;
     background-color: #f7f3ec;
     margin-top: 20px;
+    margin-bottom: 1px;
     border: none;
 }
 .catalog-sort span {
