@@ -338,6 +338,7 @@
     color: #32425c;
 
     margin: 0px;
+    margin-right: 5px;
 }
 .authorization {
     display: flex;
@@ -1438,7 +1439,8 @@
 }
 .footer-sub-menu ul {
     display: flex;
-    justify-content: space-between;
+    width: 587px;
+    /*justify-content: space-between;*/
     flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
@@ -1769,7 +1771,7 @@
 .filters fieldset {
     padding: 0;
     margin: 0;
-    margin-top: 15px;
+   margin-top: 15px;
     border: none;
 }
 .filters fieldset:first-of-type {
@@ -1793,7 +1795,7 @@
     content: "";
     width: 220px;
     height: 1px;
-    top: 194px;
+    top: 198px;
     left: 0px;
     background-color: #e5e5e5;
 }
@@ -1915,7 +1917,6 @@
     content: "";
     width: 220px;
     height: 1px;
-    top: 198px;
     background-color: #e5e5e5;
 }
 .brands-filter label,
@@ -2055,7 +2056,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 38px;
+    min-height: 38px;
     background-color: #f7f3ec;
     margin-top: 20px;
     margin-bottom: 1px;
@@ -2074,6 +2075,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 355px;
     margin: 0px;
     margin-left: 95px;
