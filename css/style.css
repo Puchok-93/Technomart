@@ -1434,7 +1434,7 @@
 }
 .footer-sub-menu ul {
     display: flex;
-    width: 587px;
+    width: 584px;
     flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
@@ -1784,14 +1784,15 @@
     padding-bottom: 25px;
     position: relative;
 }
-.cost::before {
+.cost::after {
     position: absolute;
     content: "";
     width: 220px;
     height: 1px;
-    top: 198px;
     left: 0px;
     background-color: #e5e5e5;
+
+    margin-top: 25px;
 }
 .cost legend {
     font-family: "PT Sans", Arial, sans-serif;
@@ -1809,7 +1810,7 @@
     height: 80px;
     background-color: #f7f3ec;
 
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 .filter-line-full {
     position: absolute;
@@ -1855,6 +1856,8 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+
+    margin-top: 10px;
 }
 .price-control::before {
     position: absolute;
@@ -2331,7 +2334,8 @@
     background-color: #fff;
     z-index: 100;
     box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
-    margin-left: 650px;
+    /*left: calc(50% - 620px/2);*/
+    left: 30%;
 }
 .cart-popup-show {
     display: block;
